@@ -4,7 +4,6 @@ use super::{Id, Params, Version};
 
 /// Represents jsonrpc request which is a method call.
 #[derive(Clone, Debug, PartialEq, Deserialize, Serialize)]
-#[serde(deny_unknown_fields)]
 pub struct MethodCall {
 	/// A String specifying the version of the JSON-RPC protocol.
 	pub jsonrpc: Option<Version>,
